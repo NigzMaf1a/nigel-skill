@@ -1,4 +1,7 @@
 export function register(userObject, existingUserArray){
+    if(!userObject instanceof Object){
+        console.log("Invalid user data");
+    }
     const newUserArray = existingUserArray.push(userObject);
     if(!newUserArray || !Array.isArray(newUserArray)){
         console.log("User registration failed");
