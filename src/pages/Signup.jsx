@@ -39,7 +39,10 @@ export default function Signup() {
         }}
       >
         <h2 className="mb-4 text-center">Register</h2>
-        <form onSubmit={() => register(userObject)}>
+        <form onSubmit={() => {
+                               register(userObject);
+                               navigate('/login');
+                               }}>
           {/* Name1 */}
           <div className="mb-3">
             <label htmlFor="name1" className="form-label">Name</label>

@@ -44,6 +44,11 @@ export default function Gallery() {
             </div>
           )
         }
+        <button type="button" className="btn btn-primary" onClick={() => {
+                    localStorage.clear();
+                    navigate('/login');
+                  }
+          }>Logout</button>
     </div>
   );
 }
