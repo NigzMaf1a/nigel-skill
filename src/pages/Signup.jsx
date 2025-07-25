@@ -2,6 +2,7 @@ import React from 'react';
 import { useState} from 'react';
 import {Link, useNavigate } from "react-router-dom";
 import {register, validate} from '../scripts/register';
+import mockRegistrations from '../mockData//mockRegistrations.json';
 
 export default function Signup() {
     const [name, setName] = useState('');
@@ -40,7 +41,7 @@ export default function Signup() {
       >
         <h2 className="mb-4 text-center">Register</h2>
         <form onSubmit={() => {
-                               register(userObject);
+                               register(userObject, mockRegistrations);
                                navigate('/login');
                                }}>
           {/* Name1 */}
