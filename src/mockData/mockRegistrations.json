@@ -1,0 +1,16 @@
+[
+ {
+    "Name": "Nigel",
+    "PhoneNo": 712345678,
+    "Email": "nigel@gmail.com",
+    "Password": "flix123",
+    "Gender": "Male"
+  },
+   {
+    "Name1": "Whoever",
+    "PhoneNo": 756789012,
+    "Email": "whoever@gmail.com",
+    "Password": "movies123",
+    "Gender": "Male"
+  }
+]
