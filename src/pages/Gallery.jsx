@@ -25,7 +25,7 @@ export default function Gallery() {
     }, 5000)
   }, []);
   return (
-    <div className="container py-4">
+    <div className="container py-4 d-flex justify-content-center">
         <h2 className="text-center mb-4 ">Gallery</h2>
         { 
           loading ? (<p className="text-center text-muted">Loading</p>):(
@@ -33,7 +33,7 @@ export default function Gallery() {
               {movies.map((movie) => (
                 <div className="col" key={movie.id}>
                   <div className="card h-100">
-                    <img src={movie.image} className="card-img-top" alt={movie.title} />
+                    <img src={movie.image} className="card-img-top" />
                     <div className="card-body">
                       <h5 className="card-title">{movie.title}</h5>
                       <p className="card-text">{movie.description}</p>
